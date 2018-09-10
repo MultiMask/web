@@ -4,7 +4,7 @@ html, body {
 }
 
 .bg {
-  background: #FBFCFF url("/bg.svg") center center no-repeat;
+  background: #FBFCFF url("bg.svg") center center no-repeat;
   background-size: contain;
   width: 100vw;
   height: 100vh;
@@ -24,7 +24,7 @@ html, body {
 }
 
 .preview-images {
-  background: url("/preview-interface.svg") center center no-repeat;
+  background: url("preview-interface.svg") center center no-repeat;
   transform: scale(.8);
   /* width: 20vw; */
   width: 240%;
