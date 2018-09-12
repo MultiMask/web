@@ -171,12 +171,10 @@ menu {
   flex-flow: row wrap;
   align-items: flex-end;
   justify-content: flex-end;
-  border-bottom: 1px solid #EAEFF5;
 }
 
 menu.footer-menu {
   border-bottom: none;
-  border-top: 1px solid #EAEFF5;
   justify-content: flex-start;
 }
 
