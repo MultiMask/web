@@ -33,18 +33,23 @@ html, body {
 
 .preview-slide-container > div {
   transform: scale(.7);
-  width: 30rem;
-  height: 36rem;
+  /* width: 30rem; */
   position: absolute;
   transition: all .5s ease-in-out;
 }
 
 .preview-slide-0 {
-  background: url("preview-slide-1.svg") center left no-repeat;
-  left: -7rem;
+  background: url("preview-slide-mobile.jpg") center left no-repeat;
+  width: 300px;
+  height: 529px;
+  box-shadow: 0 0 50px rgba(11, 32, 68, .15);
+  border-radius: .25rem;
+  left: -2rem;
 }
 .preview-slide-1 {
-  background: url("preview-slide-0.svg") center left no-repeat;
+  background: url("preview-slide-desktop.svg") center left no-repeat;
+  width: 480px;
+  height: 36rem;
   left: -2rem;
   top: -4rem;
 }
