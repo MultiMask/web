@@ -17,19 +17,37 @@ html, body {
   box-sizing: border-box;
 }
 
-.preview-images-container {
-  padding-right: 30%;
-  flex-basis: 50%;
-  overflow: hidden;
+.preview-slide-container {
+  flex-basis: 60%;
   position: relative;
 }
 
-.preview-images {
-  background: url("preview-interface.svg") center center no-repeat;
-  transform: scale(.8);
-  /* width: 20vw; */
+.preview-slide-container > div {
+  transform: scale(.7);
   width: 240%;
   height: 86vh;
+  position: absolute;
+  transition: all .5s ease-in-out;
+}
+
+.preview-slide-0 {
+  background: url("preview-slide-1.svg") center left no-repeat;
+  left: -7rem;
+}
+.preview-slide-1 {
+  background: url("preview-slide-0.svg") center left no-repeat;
+  left: -2rem;
+  top: -4rem;
+}
+
+.preview-slide-0:hover {
+  transform: scale(1) translate3d(0, -3rem, 0);
+  z-index: 999;
+}
+
+.preview-slide-1:hover {
+  transform: scale(1) translate3d(-5rem, 1rem, 0);
+  z-index: 999;
 }
 
 .row {
