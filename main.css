@@ -21,6 +21,7 @@ html, body {
   padding-right: 30%;
   flex-basis: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 .preview-images {
@@ -63,7 +64,16 @@ h3 {
 .actions-container {
   /* color: #3ECF8E; */
   font-size: 1.4rem;
-  margin: 6rem 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  /* position: absolute; */
+}
+
+.actions-container > img {
+  margin: .5rem 0;
+  width: 12rem;
+  cursor: no-drop;
 }
 
 menu {
