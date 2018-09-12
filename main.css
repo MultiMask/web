@@ -17,7 +17,12 @@ html, body {
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+}
+
+@media (min-height: 900px) {
+  .wrapper {
+    justify-content: center;
+  }
 }
 
 .preview-slide-container {
@@ -67,18 +72,34 @@ html, body {
   justify-content: center;
 }
 
-h2, h3 {
+h1, h2, h3 {
   font-weight: normal;
   margin: .5rem 0;
   font-size: 2rem;
+  line-height: 1.34em;
+}
+
+.home-header {
+  margin: 3rem 0 0 0;
+}
+
+.home-header-sub {
+  margin: .5rem 0;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #32325D;
+  font-size: 2.4rem;
 }
 
 h2 {
-  margin-top: 3rem;
+  margin: 3rem 0 1rem 0;
   color: #32325D;
 }
 
 h3 {
+  margin: 2rem 0 1rem 0;
   font-size: 1.2em;
   color: #65778F;
 }
@@ -100,11 +121,18 @@ h3 {
 
 menu {
   margin: 0;
+  padding: 0;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
   justify-content: flex-end;
   border-bottom: 1px solid #EAEFF5;
+}
+
+menu.footer-menu {
+  border-bottom: none;
+  border-top: 1px solid #EAEFF5;
+  justify-content: flex-start;
 }
 
 menu > li {
@@ -118,9 +146,62 @@ menu a {
   overflow: hidden;
 }
 
-.about-text {
+.main-content {
   max-width: 42rem;
   margin: auto;
   background: #FBFCFF;
   padding: 2rem;
+  line-height: 1.46rem;
+}
+
+a {
+  color: #1FA2FF;
+}
+
+a:hover {
+  color: #10BDFF;
+}
+
+table {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  font-size: .9rem;
+  line-height: 1.2rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+td,
+th {
+  text-align: left;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+  font-feature-settings: "tnum";
+  -moz-font-feature-settings: "tnum";
+  -ms-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  padding-left: 0.96667rem;
+  padding-right: 0.96667rem;
+  padding-top: 0.725rem;
+  padding-bottom: calc(0.725rem - 1px);
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+li {
+  margin-bottom: calc(1.45rem / 2);
 }
