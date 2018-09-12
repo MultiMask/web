@@ -1,6 +1,7 @@
 html, body {
   width: 100vw;
   min-height: 100vh;
+  background: #FBFCFF;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -10,21 +11,29 @@ html, body {
 }
 
 .bg {
-  background: #FBFCFF url("bg.svg") center center no-repeat;
+  background: #FBFCFF url("bg.svg") center center;
   background-size: contain;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+@media (max-width: 860px) {
+  .bg {
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
 }
 
 .wrapper {
   max-width: 900px;
-  height: 100vh;
   margin: auto;
 }
 
 @media (min-height: 900px) {
+  .bg {
+    display: flex;
+  }
   .wrapper {
-    justify-content: center;
+    width: 100vw;
   }
 }
 
